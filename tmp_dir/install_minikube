@@ -1,11 +1,20 @@
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64   && chmod +x minikube
 
- sudo mkdir -p /usr/local/bin/
+sudo mkdir -p /usr/local/bin/
 
- sudo install minikube /usr/local/bin/
+sudo install minikube /usr/local/bin/
 
-  brew install minikube
+# update the root,ubuntu password "sudo passwd root"
 
-  minikube version brew install minikube
+sudo apt install linuxbrew-wrapper      # to install brew
 
-   minikube version
+brew install minikube           #install minikube or use the cmd below
+sudo snap install minikube
+
+minikube version 
+
+minikube version
+
+brew install hadolint
+
+sudo snap install kubectl

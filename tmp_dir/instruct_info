@@ -1,8 +1,12 @@
-cd /tmp/
-mkdir local_environment
-cd local_environment
-sudo apt install python3-pip
-pip3 install virtualenv
-apt-get install python3-venv
+
+mkdir .devops   
+
+sudo dpkg --configure -a                # so as to run the code below
+
+sudo apt install python3-pip            #install supporting package
+pip3 install virtualenv                 #install virtualenv some instance need what is below
+sudo apt-get install python3-venv
 python3 -m venv ~/.devops               # map virtualenv to .devops
-source ~/.devops/bin/activate
+source ~/.devops/bin/activate           # activate the virtualenv
+
+Lets install hadolint
