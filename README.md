@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <include a CircleCI status badge, here>
 
 ## Project Overview
@@ -40,3 +41,7 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+=======
+# Udacity_Project4
+Operationalize a Machine Learning Microservice API
+>>>>>>> a842fe21d10e0d270a8251c6b0013d4c0fe77a52
