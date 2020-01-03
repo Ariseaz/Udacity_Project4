@@ -1,0 +1,8 @@
+cd /tmp/
+mkdir local_environment
+cd local_environment
+sudo apt install python3-pip
+pip3 install virtualenv
+apt-get install python3-venv
+python3 -m venv ~/.devops               # map virtualenv to .devops
+source ~/.devops/bin/activate
