@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: projecthouse-deploy
+spec:
+  selector:
+    matchLabels:
+      app: projecthouse
+  template:
+    metadata:
+      labels:
+        app: projecthouse
+    spec:
+      containers:
+        - name: projecthouse-app
+          image: adenijiazeez/machinelearning-micro-srv:latest
+          ports: 
+            - name: http
+              containerPort: 80
