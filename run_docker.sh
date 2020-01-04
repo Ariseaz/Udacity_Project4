@@ -12,4 +12,4 @@ docker images
 
 # Step 3: 
 # Run flask app
-docker exec -it projectapp bash
+docker exec -it projecthouse bash
