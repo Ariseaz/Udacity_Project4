@@ -10,3 +10,5 @@ python3 -m venv ~/.devops               # map virtualenv to .devops
 source ~/.devops/bin/activate           # activate the virtualenv
 
 Lets install hadolint
+
+make lint                               #to lint Dockerfile
