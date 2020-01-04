@@ -3,12 +3,39 @@ mkdir .devops
 
 sudo dpkg --configure -a                # so as to run the code below
 
-sudo apt install python3-pip            #install supporting package
+sudo apt install python3-pip -y            #install supporting package
 pip3 install virtualenv                 #install virtualenv some instance need what is below
-sudo apt-get install python3-venv
+sudo apt-get install python3-venv -y
 python3 -m venv ~/.devops               # map virtualenv to .devops
 source ~/.devops/bin/activate           # activate the virtualenv
 
 Lets install hadolint
 
 make lint                               #to lint Dockerfile
+
+FOLLOW THE INSTRUCTION TO INSTALL MINIKUBE
+https://www.radishlogic.com/kubernetes/running-minikube-in-aws-ec2-ubuntu/
+
+TO RUN MINIKUBE
+
+install KVM
+sudo apt-get -y install qemu-kvm libvirt-bin virt-top  libguestfs-tools virtinst bridge-utils
+sudo modprobe vhost_net
+sudo lsmod | grep vhost
+echo "vhost_net" | sudo tee -a /etc/modules
+
+DOWNLOAD MINIKUBE
+wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+chmod +x minikube-linux-amd64
+sudo mv minikube-linux-amd64 /usr/local/bin/minikube
+
+INSTALL KUBECTL
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x kubectl
+sudo mv kubectl  /usr/local/bin/
+kubectl version -o json         #check version
+
+INSTALL DOCKER MACHINE KVM DRIVER
+curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-kvm2
+chmod +x docker-machine-driver-kvm2
+sudo mv docker-machine-driver-kvm2 /usr/local/bin/
