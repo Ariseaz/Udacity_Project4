@@ -5,7 +5,7 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-dockerpath = "adenijiazeez/machinelearning-micro-srv"
+dockerpath="adenijiazeez/machinelearning-micro-srv"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
@@ -18,5 +18,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward adenijiazeez/machinelearning-micro-srv:latest 8000:80
+kubectl port-forward deployment/machinelearning-micro-srv-deployment 8000:80
 

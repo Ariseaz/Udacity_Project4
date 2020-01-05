@@ -14,5 +14,5 @@ echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
-docker tag projecthouse adenijiazeez/machinelearning-micro-srv:latest
+docker tag machinelearning-micro-srv adenijiazeez/machinelearning-micro-srv:latest
 docker push  adenijiazeez/machinelearning-micro-srv:latest
