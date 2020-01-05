@@ -9,8 +9,7 @@ dockerpath="adenijiazeez/machinelearning-micro-srv"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl apply -f kubernetes/projecthouse.yml
-
+kubectl run machinelearning-micro-srv --image=$dockerpath --port=80
 
 # Step 3:
 # List kubernetes pods
@@ -18,5 +17,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward deployment/machinelearning-micro-srv-deployment 8000:80
+kubectl port-forward deployment/machinelearning-micro-srv 8000:80
 

@@ -1,3 +1,19 @@
+197.210.47.2 - - [05/Jan/2020 09:41:46] "GET / HTTP/1.1" 200 -
+197.210.47.235 - - [05/Jan/2020 09:41:46] "GET /favicon.ico HTTP/1.1" 404 -
+[2020-01-05 09:43:08,562] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-01-05 09:43:08,575] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-05 09:43:08,585] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-05 09:43:08,589] INFO in app: Prediction Output: [20.35373177134412]
+172.17.0.1 - - [05/Jan/2020 09:43:08] "POST /predict HTTP/1.1" 200 -
+
+
+
+
 [2020-01-04 11:39:38,670] INFO in app: JSON payload:
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
 [2020-01-04 11:39:38,699] INFO in app: Inference payload DataFrame:
