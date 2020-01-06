@@ -62,3 +62,6 @@ history
    18  sudo minikube start --vm-driver=none
    19  clear
    20  history
+
+    sudo kubectl get services                                                   #to get pods running
+    sudo kubectl expose deployment machinelearning-micro-srv --type=NodePort     #to expose port 80
