@@ -39,3 +39,26 @@ INSTALL DOCKER MACHINE KVM DRIVER
 curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-kvm2
 chmod +x docker-machine-driver-kvm2
 sudo mv docker-machine-driver-kvm2 /usr/local/bin/
+
+history
+
+    1  clear
+    2  ls
+    3  clear
+    4  sudo apt-get update -y
+    5  sudo apt install python3-pip -y
+    6  pip3 install virtualenv
+    7  sudo apt-get install python3-venv -y
+    8  python3 -m venv ~/.devops
+    9  source ~/.devops/bin/activate
+   10  sudo apt-get install git -y
+   11  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+   12  chmod +x ./kubectl
+   13  sudo mv ./kubectl /usr/local/bin/kubectl
+   14  sudo apt-get update &&     sudo apt-get install docker.io -y
+   15  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+   16  minikube version
+   17  minikube start --vm-driver=none
+   18  sudo minikube start --vm-driver=none
+   19  clear
+   20  history
